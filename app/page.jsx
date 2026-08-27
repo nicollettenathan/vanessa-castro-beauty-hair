@@ -19,7 +19,7 @@ export default function Home() {
           <small>BEAUTY HAIR</small>
         </a>
         <nav className="navLinks" aria-label="Navegação principal">
-          <a href="#sobre">QUEM SOMOS</a>
+          <a href="/minha-historia">MINHA HISTÓRIA</a>
           <a href="#resultados">TRABALHOS</a>
           <a href="#agendar">CONTATO</a>
         </nav>
@@ -40,17 +40,6 @@ export default function Home() {
           </div>
         </div>
         <div className="heroIndex">VANESSA CASTRO BEAUTY HAIR · 2026</div>
-      </section>
-
-      <section className="intro shell section" id="sobre">
-        <p className="eyebrow dark">QUEM SOMOS</p>
-        <div className="splitTitle">
-          <h2>Beleza com técnica, intenção e identidade.<br /><em>Um atendimento que começa na escuta.</em></h2>
-          <div className="introCopy">
-            <p>Vanessa Castro Beauty Hair nasce da proposta de criar resultados personalizados, respeitando estilo, rotina e a essência de cada cliente.</p>
-            <p>Mais do que seguir tendências, o trabalho busca construir transformações elegantes, atuais e possíveis de manter no dia a dia.</p>
-          </div>
-        </div>
       </section>
 
       <section className="services section shell" id="especialidades">
