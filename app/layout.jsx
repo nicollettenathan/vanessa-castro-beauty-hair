@@ -1,4 +1,5 @@
 import './globals.css'
+import './cta.css'
 
 export const metadata = {
   title: 'Vanessa Castro Beauty Hair',
