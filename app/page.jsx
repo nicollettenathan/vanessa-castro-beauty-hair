@@ -19,8 +19,8 @@ export default function Home() {
           <small>BEAUTY HAIR</small>
         </a>
         <nav className="navLinks" aria-label="Navegação principal">
-          <a href="#especialidades">ESPECIALIDADES</a>
-          <a href="#resultados">RESULTADOS</a>
+          <a href="#sobre">QUEM SOMOS</a>
+          <a href="#resultados">TRABALHOS</a>
           <a href="#agendar">CONTATO</a>
         </nav>
         <a className="navCta" href="#agendar">AGENDAR</a>
@@ -36,19 +36,19 @@ export default function Home() {
           <p className="heroCopy">Um atendimento pensado para transformar o cabelo sem apagar a identidade de quem você é.</p>
           <div className="heroActions">
             <a className="button light" href="#agendar">AGENDAR EXPERIÊNCIA</a>
-            <a className="ghostLink" href="#resultados">VER TRANSFORMAÇÕES</a>
+            <a className="ghostLink" href="#resultados">VER TRABALHOS</a>
           </div>
         </div>
         <div className="heroIndex">VANESSA CASTRO BEAUTY HAIR · 2026</div>
       </section>
 
-      <section className="intro shell section">
-        <p className="eyebrow dark">POSICIONAMENTO</p>
+      <section className="intro shell section" id="sobre">
+        <p className="eyebrow dark">QUEM SOMOS</p>
         <div className="splitTitle">
-          <h2>Seu cabelo não precisa parecer com o de ninguém.<br /><em>Ele precisa parecer com você.</em></h2>
+          <h2>Beleza com técnica, intenção e identidade.<br /><em>Um atendimento que começa na escuta.</em></h2>
           <div className="introCopy">
-            <p>Cada transformação começa com escuta, técnica e uma leitura cuidadosa do que valoriza sua beleza.</p>
-            <p>O resultado precisa ser bonito no salão, funcionar na rotina e continuar fazendo sentido depois.</p>
+            <p>Vanessa Castro Beauty Hair nasce da proposta de criar resultados personalizados, respeitando estilo, rotina e a essência de cada cliente.</p>
+            <p>Mais do que seguir tendências, o trabalho busca construir transformações elegantes, atuais e possíveis de manter no dia a dia.</p>
           </div>
         </div>
       </section>
@@ -70,14 +70,14 @@ export default function Home() {
 
       <section className="portfolio section" id="resultados">
         <div className="shell sectionHead row portfolioHead">
-          <div><p className="eyebrow dark">RESULTADOS</p><h2>Transformações que<br /><em>falam por si.</em></h2></div>
+          <div><p className="eyebrow dark">TRABALHOS</p><h2>Transformações que<br /><em>falam por si.</em></h2></div>
           <p className="sideCopy">Uma seleção visual inspirada no universo estético do trabalho da Vanessa. Na versão final, este espaço recebe os resultados reais escolhidos por ela.</p>
         </div>
         <div className="masonry shell">
           {portfolio.map((src, i) => (
             <figure key={src}>
               <img src={src} alt={`Referência visual de transformação ${i + 1}`} loading="lazy" />
-              <figcaption>TRANSFORMAÇÃO {String(i + 1).padStart(2,'0')}</figcaption>
+              <figcaption>TRABALHO {String(i + 1).padStart(2,'0')}</figcaption>
             </figure>
           ))}
         </div>
